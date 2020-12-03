@@ -18,8 +18,7 @@ const CR = '\r', LF = '\n', CRLF = '\r\n';
 const app = {
 	version: "Ver.0.2.1",
 	// 最新版のMJ縮退マップ
-	resourceURL: "https://oscdl.ipa.go.jp/MJShrinkMap.json",
-//	resourceURL: "https://dl.mojikiban.ipa.go.jp/MJShrinkMap.json",
+	resourceURL: "https://moji.or.jp/wp-content/mojikiban/oscdl/MJShrinkMap.1.2.0.json",
 	usage:" \
 使い方: MJ2JISX0213 [オプション] [出力ファイル名]\n\n \
 オプション:\n \
@@ -125,7 +124,7 @@ function ファイル読み込み()
 	JISX0213_UCS = JSON.parse(JISX0213toUCS);
 	
 	// MJ縮退マップをHTTP GETで読み込む。
-	console.log("* mojikiban.ipa.go.jpからMJ縮退マップを取得します。");
+	console.log("* %s からMJ縮退マップを取得します。", new URL(app.resourceURL).hostname);
 	https.get(app.resourceURL, function(res) {
 		
 		var body = "";
