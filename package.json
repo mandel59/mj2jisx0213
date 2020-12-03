@@ -1,6 +1,6 @@
 {
-	"name": "MJ2JISX0213",
-	"version": "0.2.1",
+	"name": "@mandel59/mj2jisx0213",
+	"version": "0.2.2",
 	"private": true,
 	"scripts": {
 		"start": "node ./MJ2JISX0213.es"
@@ -10,15 +10,24 @@
 		"name": "MUTOU Keisuke",
 		"email": "k-mutou@ipa.go.jp"
 	},
+	"contributors": [
+		{
+			"name": "Ryusei Yamaguchi",
+			"email": "mandel59@gmail.com"
+		}
+	],
 	"main": "MJ2JISX0213.es",
 	"files": [
-		"MJ2JISX0213.js",
-		"JISX0213_UCS.js",
+		"MJ2JISX0213.es",
+		"mj2jisx0213-sqlite.js",
+		"JISX0213_UCS.json",
 		"LICENSE",
-		"http://dl.mojikiban.ipa.go.jp/MJShrinkMap.json"
+		"Readme.txt"
 	],
 	"dependencies": {
-		"underscore": "1.8.3",
-		"posix-getopt": ""
+		"@mandel59/mojidata": "^0.2.0",
+		"better-sqlite3": "^7.1.1",
+		"posix-getopt": "^1.2.0",
+		"underscore": "^1.12.0"
 	}
 }

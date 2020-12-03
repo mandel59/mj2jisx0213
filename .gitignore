@@ -1,2 +1,3 @@
 node_modules
-変換テーブル.json
+変換テーブル*.json
+*.diff
