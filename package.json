@@ -1,0 +1,24 @@
+{
+	"name": "MJ2JISX0213",
+	"version": "0.2.1",
+	"private": true,
+	"scripts": {
+		"start": "node ./MJ2JISX0213.es"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "MUTOU Keisuke",
+		"email": "k-mutou@ipa.go.jp"
+	},
+	"main": "MJ2JISX0213.es",
+	"files": [
+		"MJ2JISX0213.js",
+		"JISX0213_UCS.js",
+		"LICENSE",
+		"http://dl.mojikiban.ipa.go.jp/MJShrinkMap.json"
+	],
+	"dependencies": {
+		"underscore": "1.8.3",
+		"posix-getopt": ""
+	}
+}
